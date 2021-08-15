@@ -1,0 +1,95 @@
+.container {
+  position: absolute;
+  top: 3%;
+  height: 95%;
+  right: 0;
+  width: 27%;
+  background: url('~assets/images/right.png') no-repeat center;
+  background-size: 100% 100%;
+  transform: perspective(400px) rotateY(-3deg);
+  transform-origin: right;
+  padding: 30px 40px 60px 30px;
+  .baseData {
+    height: 15%;
+    .baseItem {
+      width: 25%;
+    }
+    .icon {
+      margin-right: 5px;
+    }
+    .value {
+      color: @ld-fc-sta-ma;
+    }
+  }
+  .nursingPostData {
+    height: 11%;
+    .item {
+      width: 30%;
+    }
+    .icon {
+      margin-right: 5px;
+    }
+    .value {
+      font-size: 18px;
+      color: @ld-fc-sta-ot;
+    }
+  }
+  .deviceData {
+    height: 10%;
+    .deviceInfo {
+      .deviceItem {
+        padding: 0 20px;
+        height: 100%;
+        width: 45%;
+        background: url('~assets/images/borderBg.png') no-repeat center;
+        background-size: 100% 100%;
+        .count {
+          color: @ld-fc-br;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  .collectionData {
+    height: 25%;
+  }
+  .transitData {
+    padding-top: 10px;
+    height: 21%;
+    .info {
+      padding: 5px 10px;
+      span {
+        font-size: 22px;
+        color: @ld-fc-sta-ma;
+      }
+    }
+    .data {
+      padding: 0 20px;
+      height: 100%;
+      background: url('~assets/images/borderBgLong.png') no-repeat center;
+      background-size: 100% 100%;
+      .count {
+        color: @ld-fc-br;
+        font-weight: bold;
+        font-size: 18px;
+      }
+    }
+  }
+  .checkData {
+    flex: auto;
+    .left {
+      height: 90%;
+      width: 50%;
+      .item {
+        height: 48%;
+        padding: 0 20px;
+        background: url('~assets/images/borderBg.png') no-repeat center;
+        background-size: 100% 100%;
+        .count {
+          color: @ld-fc-br;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

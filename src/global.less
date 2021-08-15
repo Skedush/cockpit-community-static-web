@@ -1,0 +1,125 @@
+@import '~antd/dist/antd.less';
+@import '~@lidig/web-ui/dist/index.esm.css';
+@import '~@/themes/vars.less';
+@import '~@/themes/default.less';
+html,
+body,
+#root {
+  height: 100%;
+  color: #ccc;
+  font-size: 14px;
+}
+
+body {
+  margin: 0;
+}
+.height100 {
+  height: 100%;
+}
+.width100 {
+  width: 100%;
+}
+
+.flexAuto {
+  flex: auto;
+  overflow: auto;
+}
+
+.flexEnd {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+}
+.flexColEnd {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+.flexAround {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+.flexWrap {
+  flex-wrap: wrap;
+}
+.flexNoWrap {
+  flex-wrap: nowrap;
+}
+.flexBetween {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.flexColBetween {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.flexColCenter {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.flexRowCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flexStart {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+.flexColStart {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  // width: 1656px;
+  // min-width: 1600px;
+  // overflow-x: hidden;
+}
+.flexColAround {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.flexCenter {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.flexNoContent {
+  align-content: flex-start;
+}
+.itemCenter {
+  align-items: center;
+}
+.itemBaseline {
+  align-items: baseline;
+}
+
+:global {
+  ::-webkit-scrollbar-thumb {
+    background-color: @ld-scrollbar-thumb;
+    border-radius: @ld-webkit-scrollbar-radius;
+  }
+  ::-webkit-scrollbar-track {
+    background: @ld-scrollbar-track-bg;
+    border-radius: @ld-webkit-scrollbar-radius;
+  }
+  ::-webkit-scrollbar {
+    width: @ld-webkit-scrollbar;
+  }
+  ::-webkit-scrollbar-corner {
+    border-radius: @ld-webkit-scrollbar-radius;
+  }
+  ::-webkit-scrollbar-track-piece {
+    border-radius: @ld-webkit-scrollbar-radius;
+  }
+  :hover {
+    ::-webkit-scrollbar-thumb {
+      background-color: @ld-scrollbar-thumb-hover;
+    }
+  }
+}

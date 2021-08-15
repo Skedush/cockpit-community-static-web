@@ -1,0 +1,53 @@
+.container {
+  position: absolute;
+  top: 60%;
+  left: 0;
+  width: 900px;
+  height: 200px;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  padding: 25px;
+  .navBtn {
+    border: 1px solid @ld-sta-border;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    margin: 0 15px;
+    &:hover {
+      background: linear-gradient(#0000, #1954a5);
+      box-shadow: 0 0 35px #1954a5;
+      transform: scale3d(1.1, 1.1, 1.1);
+    }
+  }
+}
+.zoomIn {
+  animation: zoomIn 500ms 0ms;
+  animation-fill-mode: forwards;
+}
+.zoomIn2 {
+  animation: zoomIn2 500ms 0ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+@keyframes zoomIn2 {
+  from {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}

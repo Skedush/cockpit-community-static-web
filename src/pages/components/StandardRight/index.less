@@ -1,0 +1,99 @@
+.container {
+  position: absolute;
+  top: 3%;
+  height: 95%;
+  right: 0;
+  width: 27%;
+  transform: perspective(400px) rotateY(-3deg);
+  transform-origin: right;
+  background: url('~assets/images/right.png') no-repeat center;
+  background-size: 100% 100%;
+  padding: 30px 40px 50px 30px;
+  .baseData {
+    height: 42%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .rightTopBox {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+
+      .rightTop {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 24px;
+
+        .rightTopItem {
+          position: relative;
+
+          img {
+            width: 88px;
+            height: 95px;
+          }
+
+          p {
+            display: block;
+            width: 100%;
+            font-size: 16px;
+            font-weight: 400;
+            color: #fff;
+            text-align: center;
+            margin: 0;
+            position: absolute;
+            bottom: 4%;
+          }
+        }
+      }
+
+      .rightTopBottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-top: 20px;
+        padding-left: 20px;
+        .rightTopBottomItem {
+          width: 47%;
+          display: flex;
+          margin: 5px 5px 19px 5px;
+
+          img {
+            width: 45px;
+            height: 45px;
+          }
+
+          .content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 12px;
+
+            .number {
+              font-size: 21px;
+              font-weight: 500;
+              color: #30fdff;
+              line-height: 21px;
+            }
+
+            span {
+              font-size: 14px;
+              font-weight: 400;
+              color: #d5e1e1;
+            }
+          }
+        }
+      }
+    }
+  }
+  .rightBottom {
+    flex: 1;
+  }
+}
